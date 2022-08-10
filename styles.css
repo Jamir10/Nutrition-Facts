@@ -30,6 +30,7 @@ p {
 .divider{
     border-bottom: 1px solid #888989;
     margin: 2px 0;
+    clear:right;
 }
 .right{
     float:right;
@@ -38,11 +39,44 @@ p {
     or right of its container, allowing other content (such as text) 
     to wrap around it.
     */
-.divider-lg{
+.lg{
     height: 10px;
     
 }
-.divider-lg, .md {
+.lg, .md{
     background-color: black;
     border: 0;
+}
+.sm-text{
+    font-size: 0.85rem;  
+}
+.calories-info h1{
+    margin: -5px -2px;
+    overflow: hidden;
+}
+.calories-info span{
+    font-size: 1.2em;
+    margin-top: -7px;
+}
+.md {
+    height: 5px;
+}
+.indent {
+    margin-left: 1em;
+}
+.daily-value p:not(.no-divider){
+    border-bottom: 1px solid #888989;
+}
+/*The :not pseudo-selector can be used to select all elements that 
+do not match the given CSS rule.
+div:not(#example) {
+  color: red;
+}
+The above selects all div elements without an id of example.
+*/
+.bottom-border {
+    border-bottom: 1px solid #888989; 
+}
+.dbl-indent {
+    margin-left: 2em;
 }
